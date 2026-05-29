@@ -1,0 +1,167 @@
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --border-color: #000000;
+    --accent-color: #0066cc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    position: sticky;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    margin-bottom: 40px;
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: underline;
+    color: var(--text-color);
+    font-weight: bold;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #e2e8f0;
+    border-radius: 28px;
+    padding: 35px;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+}
+
+.card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.card a {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.content-page {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e2e8f0;
+}
+
+.contact-form {
+    background-color: #ffffff;   /* Pure white card body */
+    border: 3px solid #000000;    /* Thick black line matching your sketch style */
+    border-radius: 16px;         /* Rounded corners to fit inside the wrapper */
+    padding: 30px;               /* Breathing room inside the form card */
+    margin-top: 25px;
+    text-align: left;            /* Aligns the fields to the left */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft background depth */
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111111;
+    font-size: 22px;
+    border-bottom: 2px solid #e2e8f0; /* Soft underline divider for the title */
+    padding-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #444444;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 14px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0052a3;
+    transform: translateY(-1px);
+}
+
+ /* Quick font-size changers I made :P
+ These literally only exist because I don't want to retype style="font-size: x/y;"
+ over and over again. */
+.about-text {
+    font-size: larger;
+}
+.about-text-larger {
+    font-size: x-large;
+}

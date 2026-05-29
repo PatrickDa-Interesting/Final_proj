@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV: Om mig</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="nav-logo">
+            <img src="home-icon.png" alt="Hemikon" class="logo-img">
+            <span>CV: Start Page ←</span>
+        </a>
+    </header>
+
+    <main class="card-container">
+        <h1>Om mig</h1>
+
+        <img src="home-icon.png" alt="En profilbild på mig" style="width: 150px; border-radius: 50%;">
+
+        <p class="about-text-larger">
+            Hej! Jag är en driven student som just nu studerar programmering, webbutveckling och nätverksteknik.
+            Teknik har alltid varit en stor del av mitt liv, och jag motiveras av att förstå hur
+            system, kod och nätverk samverkar bakom kulisserna.
+            <br><br><br>
+            Mitt mål med min utbildning är att bygga en stabil grund inom både programmering och
+            IT-infrastruktur. Jag trivs bäst när jag får lösa tekniska problem och omsätta teoretiska
+            kunskaper till praktiska projekt, som den här webbplatsen!
+            <br><br><br>
+            Vill du veta mer om mina projekt eller komma i kontakt med mig? Använd gärna
+            formuläret här nedanför för att skicka ett meddelande!
+        </p>
+
+        <hr>
+
+        <!--Fick lite hjälp här, den såg tråkig ut utan CSS hjälpen-->
+        <form action="#" method="POST" class="contact-form">
+            <h2>Kontakta mig</h2>
+
+            <p>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </p>
+
+            <button type="submit">Skicka meddelande</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
